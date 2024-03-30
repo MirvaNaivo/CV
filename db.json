@@ -1,0 +1,82 @@
+{
+    "personal_info": {
+        "name": "Mirva Näivö",
+        "email": "mirva62@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/mirva-naivo/",
+        "github": "https://github.com/MirvaNaivo"
+    },
+    "work_experience": [
+        {
+            "company": "Taimer Oy",
+            "date": "27.2.2024-6.6.2024",
+            "role": "Fullstack Developer Trainee",
+            "description": "I am working as a part of the scrum team on my own project. The project includes converting Javascript-files to Typescript, replacing larg part of the Material UI with Ag Grid and updating code when necessary. In the project I am using React.js, PHP and  MySQL."
+        },
+        {
+            "company": "Nordea Bank Oyj",
+            "date": "28.1.2019-10.10.2023",
+            "role": " AML & Sanctions Processing Specialist",
+            "description": "I started at Nordea working as a financial advisor in the callcenter. In February 2020 I continued my career development  working as an entrepreneur advisor. After almost a year working closely with business customers I wanted to see the work from another perspective and got a position in KYC Services as an AML & Sanctions Processing Specialist and team leader trainee."
+        },
+        {
+            "company": "Fysioline Fressi Oy",
+            "date": "2.5.2018-31.12.2018",
+            "role": " Personal Trainer and physiotherapist",
+            "description": "I worked with individuals and groups as a PT and physiotherapist. My specialities are weightlifting, bodyweight training and preventive physiotherapy"
+        },
+        {
+            "company":  "Tilitoimisto A. Karppinen Oy",
+            "date": "26.2.2013-31.8.2015",
+            "role": "Office secretary",
+            "description": "I worked in the reception and managed the accounting offices invoicing. I also did some accounting and account receivables for the customers."
+        }
+    ],
+    "education": {
+        "Buutti Oy": {
+            "date": "7.12.2023-26.2.2024",
+            "field": "Cloud & Full Stack Development",
+            "description": "Education part of the recruitment program. In the education part I had recap of the techniques such as React Vite, Javascript, Typescript, Node, HTML, CSS, MySQL and testing with Jest. I also got to learn new skills such as Docker, Azure (App Services with and without Docker and Database Services with PostgreSQL Server and Node application) and GitLab CI/CD"
+        },
+        "Brainnest": {
+            "date": "9.4.2023-6.5.2023",
+            "field": " Frontend Development Industry Training",
+            "description": "In the training I had a recap on HTML, CSS and Javascript."
+        },
+        "Savonia Code Academy": {
+            "date": "10.8.2021-31.12.2022",
+            "field": "Full Stack Development",
+            "description": "In the Code Academy I learned the basics of Fullstack Development. The techniques mostly used were HTML, CSS, C#, Javascript, Typescript, React.js, Node.js and MySQL. We also had a small introduction to Azure and AWS."
+        },
+        "Oulu University of Applied Sciences": {
+            "date": "4.8.2015-31.7.2019",
+            "field": "Physiotherapy",
+            "description": ""
+        }
+    },
+    "skills": {
+        "MySQL": "excellent",
+        "PostgreSQL": "excellent",
+        "HTML": "excellent",
+        "CSS": "excellent",
+        "React.js, Vite": "excellent",
+        "Node.js": "excellent",
+        "Javascript": "excellent",
+        "Typescript": "excellent",
+        "GitHub": "excellent",
+        "GitLab": "excellent",
+        "Docker": "competent",
+        "PHP": "competent",
+        "Asp.Net": "competent",
+        "GitLab CI/CD": "competent",
+        "Azure": "competent",
+        "Teamwork": "excellent",
+        "Scrum": "excellent",
+        "customerservice": "excellent",
+        "MS Office": "excellent",
+        "Independent work": "excellent"
+    },
+    "languages": {
+        "Finnish": "mother",
+        "English": "fluent"
+    }
+}
