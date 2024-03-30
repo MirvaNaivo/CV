@@ -43,7 +43,7 @@ export default function Home() {
                             }}
                         >
                             <Typography component='h1' variant='h3' color='inherit' gutterBottom>
-                                Welcome
+                                
                             </Typography>
                         </Box>
                     </Grid>
@@ -54,7 +54,7 @@ export default function Home() {
                     <Card sx={{ display: 'flex' }}>
                         <CardContent sx={{ flex: 1 }}>
                             <Typography component="h2" variant="h5">
-                                Find out more!
+                                Get to know me!
                             </Typography>
                             <Typography variant="body1" paragraph>
                                 Tap on the buttons above to find out more about me and the reasons why you should hire me.

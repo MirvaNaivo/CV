@@ -1,4 +1,4 @@
-## About me
+# About me
 
 I am a future talent looking for a new adventure in Fullstack Development. 
 I have wide knowlegde in different business fields which is an advantage when 
