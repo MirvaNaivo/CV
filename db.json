@@ -31,52 +31,120 @@
             "description": "I worked in the reception and managed the accounting offices invoicing. I also did some accounting and account receivables for the customers."
         }
     ],
-    "education": {
-        "Buutti Oy": {
+    "education": [
+        {
+            "name": "Buutti Oy",
             "date": "7.12.2023-26.2.2024",
             "field": "Cloud & Full Stack Development",
             "description": "Education part of the recruitment program. In the education part I had recap of the techniques such as React Vite, Javascript, Typescript, Node, HTML, CSS, MySQL and testing with Jest. I also got to learn new skills such as Docker, Azure (App Services with and without Docker and Database Services with PostgreSQL Server and Node application) and GitLab CI/CD"
         },
-        "Brainnest": {
+         {
+            "name": "Brainnest",
             "date": "9.4.2023-6.5.2023",
             "field": " Frontend Development Industry Training",
             "description": "In the training I had a recap on HTML, CSS and Javascript."
         },
-        "Savonia Code Academy": {
+        {
+            "name": "Savonia Code Academy",
             "date": "10.8.2021-31.12.2022",
             "field": "Full Stack Development",
             "description": "In the Code Academy I learned the basics of Fullstack Development. The techniques mostly used were HTML, CSS, C#, Javascript, Typescript, React.js, Node.js and MySQL. We also had a small introduction to Azure and AWS."
         },
-        "Oulu University of Applied Sciences": {
+        {
+            "name": "Oulu University of Applied Sciences",
             "date": "4.8.2015-31.7.2019",
             "field": "Physiotherapy",
             "description": ""
         }
-    },
-    "skills": {
-        "MySQL": "excellent",
-        "PostgreSQL": "excellent",
-        "HTML": "excellent",
-        "CSS": "excellent",
-        "React.js, Vite": "excellent",
-        "Node.js": "excellent",
-        "Javascript": "excellent",
-        "Typescript": "excellent",
-        "GitHub": "excellent",
-        "GitLab": "excellent",
-        "Docker": "competent",
-        "PHP": "competent",
-        "Asp.Net": "competent",
-        "GitLab CI/CD": "competent",
-        "Azure": "competent",
-        "Teamwork": "excellent",
-        "Scrum": "excellent",
-        "customerservice": "excellent",
-        "MS Office": "excellent",
-        "Independent work": "excellent"
-    },
-    "languages": {
-        "Finnish": "mother",
-        "English": "fluent"
-    }
+    ],
+    "skills": [
+        {
+            "skill": "MySQL",
+            "level": "excellent"
+        },
+        {
+            "skill": "PostgreSQL",
+            "level": "excellent"
+        },
+        {
+            "skill": "HTML",
+            "level": "excellent"
+        },
+        {
+            "skill": "CSS",
+            "level": "excellent"
+        },
+        {
+            "skill": "React.js, Vite",
+            "level": "excellent"
+        },
+        {
+            "skill": "Node.js",
+            "level": "excellent"
+        },
+        {
+            "skill": "Javascript",
+            "level": "excellent"
+        },
+        {
+            "skill": "Typescript",
+            "level": "excellent"
+        },
+        {
+            "skill": "GitHub",
+            "level": "excellent"
+        },
+        {
+            "skill": "GitLab, Gitlab CI/CD",
+            "level": "competent"
+        },
+        {
+            "skill": "Docker",
+            "level": "competent"
+        },
+        {
+            "skill": "PHP",
+            "level": "competent"
+        },
+        {
+            "skill": "Asp.Net",
+            "level": "competent"
+        },
+        {
+            "skill": "Azure",
+            "level": "competent"
+        }
+    ],
+    "soft_skills": [
+        {
+            "skill": "Teamwork",
+            "level": "excellent"
+        },
+        {
+            "skill": "Scrum",
+            "level": "excellent"
+        },
+        {
+            "skill": "Customerservice",
+            "level": "excellent"
+        },
+        {
+            "skill": "MS Office",
+            "level": "excellent"
+        },
+        {
+            "skill": "Independent Work",
+            "level": "excellent"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Finnish", 
+            "level": "mother"
+        },
+        {
+            "language": "English",
+            "level": "fluent"
+        }
+    ]
 }

@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import ReactMarkdown from 'markdown-to-jsx';
 import axios from 'axios'
 import Professional from '../images/Professional.jpg'
+import AboutMe from './AboutMe.md'
 
 /* Mui */
-import { Divider, Grid, Link, Paper, Typography } from '@mui/material'
+import { Grid, Link, Paper, Typography } from '@mui/material'
 
 export default function Personal() {
 
@@ -23,7 +25,7 @@ export default function Personal() {
                 <Paper elevation={1} sx={{ p: 2, marginBottom: 2 }}>
                     <Typography>{data.name}</Typography>
                     <Typography>{data.email}</Typography>
-                    <Link href={data.linkedin}>LinkedIn</Link> <br/>
+                    <Link href={data.linkedin}>LinkedIn</Link> <br />
                     <Link href={data.github}>Github</Link>
                 </Paper>
                 <Paper elevation={1} sx={{ p: 2 }}>
@@ -31,12 +33,10 @@ export default function Personal() {
                 </Paper>
             </Grid>
             <Grid item xs={12} md={8} >
-                <Typography variant="h6" gutterBottom>
-                    About Me
-                </Typography>
-                <Divider />
                 <Typography>
-                    Some text
+                    <ReactMarkdown>
+                        {AboutMe}
+                    </ReactMarkdown>
                 </Typography>
             </Grid>
         </Grid>

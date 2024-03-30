@@ -1,7 +1,54 @@
+import { useEffect, useState } from 'react';
+import axios from 'axios'
+
+import UpsideDown from '../images/Upsidedown.jpg'
+
+/* Mui */
+import { Divider, Grid, Paper, Typography } from '@mui/material'
 
 export default function Education() {
+
+    const [data, setData] = useState([{name: "", date: "", field: "", description: ""}])
+
+    useEffect(() => {
+        getEducation()
+    })
+
+    const getEducation = () => {
+        axios.get('../db.json').then(response => {
+            return setData(response.data.education)
+        })
+    }
+
     return (
-        <div> This is education</div>
+        <Grid container spacing={5} sx={{ mt: 3 }}>
+        <Grid item xs={6} md={4}>
+            <Paper elevation={1} sx={{ p: 2 }}>
+                <img src={UpsideDown} width='325px'/>
+            </Paper>
+        </Grid>
+        <Grid item xs={12} md={8}>
+            {data.map((education) => (
+                <>
+                    <Typography variant='h6' gutterBottom>
+                        {education.name}
+                    </Typography>
+                    <Divider />
+                    Date:
+                    <Typography variant='subtitle1'>
+                        {education.date}
+                    </Typography>
+                    Role:
+                    <Typography variant='subtitle1'>
+                        {education.field}
+                    </Typography>
+                    <Typography sx={{ my: '16px' }}>
+                        {education.description}
+                    </Typography>
+                </>
+            ))}
+        </Grid>
+    </Grid>
     )
     
 }

@@ -21,7 +21,7 @@ const darkTheme = createTheme({
     subtitle1: {
       fontSize: 14,
       fontStyle: 'italic'
-    } 
+    }
   }
 })
 
@@ -91,7 +91,7 @@ function App() {
               onClick={openPersonalInfo}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
-              Personal Info
+              About Me
             </Button>
           </Grid>
           <Grid>
