@@ -78,7 +78,6 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        {/* <Grid container spacing={4} sx={{ justifyContent: 'center', my: '0' }} > */}
         <AppBar position='sticky' sx={{ flexDirection: 'row', justifyContent: 'center'}}>
           <Button
             onClick={openHome}

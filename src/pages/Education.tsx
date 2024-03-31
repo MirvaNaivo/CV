@@ -14,7 +14,7 @@ export default function Education() {
     }, [])
 
     async function getEducation() {
-        const response = await fetch("http://localhost:3000/education")
+        const response = await fetch("https://cv-mi5k.onrender.com/education")
         const education = await response.json()
         setData(education)
     }
