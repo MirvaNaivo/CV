@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import axios from 'axios'
+import { useEffect, useState } from 'react'
 import Professional from '../images/Professional.jpg'
 
 /* Mui */
@@ -9,13 +8,15 @@ export default function Personal() {
 
     const [data, setData] = useState({ name: "", email: "", linkedin: "", github: "" })
 
-    const getPersonalInfo = () => {
-        axios.get('../db.json').then(response => {
-            return setData(response.data.personal_info)
-        })
-    }
+    useEffect(() => {
+        getPersonalInfo()
+    }, [])
 
-    getPersonalInfo()
+    async function getPersonalInfo() {
+        const response = await fetch("http://localhost:3000/personal_info")
+        const info = await response.json()
+        setData(info)
+    }
 
     return (
         <Grid container spacing={5} sx={{ mt: 3 }}>

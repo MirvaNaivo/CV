@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import axios from 'axios'
+import { useEffect, useState } from 'react';
 
 import Hiking from '../images/Hiking.jpg'
 
 /* Mui */
 import { Divider, Grid, Paper, Typography } from '@mui/material'
 
-
 export default function Experience() {
 
     const [data, setData] = useState([{ company: "", date: "", role: "", description: "" }])
 
-    const getWorkExperience = () => {
-        axios.get('../db.json').then(response => {
-            return setData(response.data.work_experience)
-        })
+    useEffect(() => {
+        getExperience()
+    }, [])
+   
+    async function getExperience() {
+        const response = await fetch("http://localhost:3000/work_experience")
+        const experience = await response.json()
+        setData(experience)
     }
-
-    getWorkExperience()
 
     return (
         <Grid container spacing={5} sx={{ mt: 3 }}>

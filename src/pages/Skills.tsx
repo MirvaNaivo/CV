@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import axios from 'axios'
+import { useState, useEffect } from 'react';
 
 import MW from '../images/MW.jpg'
 
@@ -15,40 +14,43 @@ export default function Skills() {
     const [soft, setSoft] = useState([{ skill: "", level: "" }])
     const [languages, setLanguages] = useState([{ language: "", level: "" }])
 
-    const getSkills = () => {
-        axios.get('../db.json').then(response => {
-            return setSkills(response.data.skills)
-        })
+    useEffect(() => {
+        getSkills()
+        getSoftSkills()
+        getLanguages()
+    }, [])
+
+    async function getSkills() {
+        const response = await fetch("http://localhost:3000/skills")
+        const skills = await response.json()
+        setSkills(skills)
     }
 
-    const getSoftSkills = () => {
-        axios.get('../db.json').then(response => {
-            return setSoft(response.data.soft_skills)
-        })
+    async function getSoftSkills() {
+        const response = await fetch("http://localhost:3000/soft_skills")
+        const skills = await response.json()
+        setSoft(skills)
     }
 
-    const getLanguages = () => {
-        axios.get('../db.json').then(response => {
-            return setLanguages(response.data.languages)
-        })
+    async function getLanguages() {
+        const response = await fetch("http://localhost:3000/languages")
+        const languages = await response.json()
+        setLanguages(languages)
     }
 
     const handleSkills = () => {
-        getSkills()
         setShowLanguages(false)
         setShowSkills(true)
         setShowSoftSkills(false)
     }
 
     const handleSoftSkills = () => {
-        getSoftSkills()
         setShowLanguages(false)
         setShowSkills(false)
         setShowSoftSkills(true)
     }
 
     const handleLanguages = () => {
-        getLanguages()
         setShowLanguages(true)
         setShowSkills(false)
         setShowSoftSkills(false)

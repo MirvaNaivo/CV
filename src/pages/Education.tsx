@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios'
 
 import UpsideDown from '../images/Upsidedown.jpg'
 
@@ -12,12 +11,12 @@ export default function Education() {
 
     useEffect(() => {
         getEducation()
-    })
+    }, [])
 
-    const getEducation = () => {
-        axios.get('../db.json').then(response => {
-            return setData(response.data.education)
-        })
+    async function getEducation() {
+        const response = await fetch("http://localhost:3000/education")
+        const education = await response.json()
+        setData(education)
     }
 
     return (
