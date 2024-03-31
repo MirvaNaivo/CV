@@ -16,7 +16,7 @@
             "company": "Nordea Bank Oyj",
             "date": "28.1.2019-10.10.2023",
             "role": " AML & Sanctions Processing Specialist",
-            "description": "I started at Nordea working as a financial advisor in the callcenter. In February 2020 I continued my career development  working as an entrepreneur advisor. After almost a year working closely with business customers I wanted to see the work from another perspective and got a position in KYC Services as an AML & Sanctions Processing Specialist and team leader trainee."
+            "description": "I started at Nordea working as a financial advisor in the callcenter. In February 2020 I continued my career development working as an entrepreneur advisor. After almost a year working closely with business customers I wanted to see the work from another perspective and got a position in KYC Services as an AML & Sanctions Processing Specialist and team leader trainee."
         },
         {
             "company": "Fysioline Fressi Oy",
@@ -113,6 +113,10 @@
         {
             "skill": "Azure",
             "level": "competent"
+        },
+        {
+            "skill": "MS Office",
+            "level": "excellent"
         }
     ],
     "soft_skills": [
@@ -126,10 +130,6 @@
         },
         {
             "skill": "Customerservice",
-            "level": "excellent"
-        },
-        {
-            "skill": "MS Office",
             "level": "excellent"
         },
         {

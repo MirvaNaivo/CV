@@ -6,9 +6,10 @@ import Personal from './pages/Personal'
 import Experience from './pages/Experience'
 import Education from './pages/Education'
 import Skills from './pages/Skills'
+import './App.css'
 
 /* Mui */
-import { Button, Container, Grid } from '@mui/material'
+import { AppBar, Button, Container } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -77,47 +78,40 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Grid container spacing={4} sx={{ justifyContent: 'center', marginTop: '0' }}>
-          <Grid>
-            <Button
-              onClick={openHome}
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Home
-            </Button>
-          </Grid>
-          <Grid>
-            <Button
-              onClick={openPersonalInfo}
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              About Me
-            </Button>
-          </Grid>
-          <Grid>
-            <Button
-              onClick={openWorkExperience}
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Work Experience
-            </Button>
-          </Grid>
-          <Grid>
-            <Button
-              onClick={openEducation}
-              sx={{ my: 2, color: 'white', display: 'block' }}
-            >
-              Education
-            </Button></Grid>
-          <Grid>
+        {/* <Grid container spacing={4} sx={{ justifyContent: 'center', my: '0' }} > */}
+        <AppBar position='sticky' sx={{ flexDirection: 'row', justifyContent: 'center'}}>
+          <Button
+            onClick={openHome}
+            sx={{ my: 2, color: 'white', display: 'block' }}
+          >
+            Home
+          </Button>
+          <Button
+            onClick={openPersonalInfo}
+            sx={{ my: 2, color: 'white', display: 'block' }}
+          >
+            About Me
+          </Button>
+          <Button
+            onClick={openWorkExperience}
+            sx={{ my: 2, color: 'white', display: 'block' }}
+          >
+            Work Experience
+          </Button>
+          <Button
+            onClick={openEducation}
+            sx={{ my: 2, color: 'white', display: 'block' }}
+          >
+            Education
+          </Button>
             <Button
               onClick={openSkills}
               sx={{ my: 2, color: 'white', display: 'block' }}
             >
               Skills
             </Button>
-          </Grid>
-        </Grid>
+        </AppBar>
+
         <main>
           {home ? <Home /> : ""}
           {personal ? <Personal /> : ""}

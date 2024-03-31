@@ -56,7 +56,7 @@ export default function Skills() {
 
     return (
         <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Grid item xs={6} md={4}>
+            <Grid item xs={12} md={4}>
                 <Paper elevation={1} sx={{ p: 2 }}>
                     <img src={MW} width='325px' />
                 </Paper>

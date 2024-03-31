@@ -49,20 +49,20 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Paper>
-            <Grid container spacing={4}>
+            <Grid container spacing={4} sx={{ flexDirection: { xs: 'column', md: 'row'}}}>
                 <Grid item xs={12} md={6}>
                     <Card sx={{ display: 'flex' }}>
                         <CardContent sx={{ flex: 1 }}>
-                            <Typography component="h2" variant="h5">
+                            <Typography component="h2" variant="h5" gutterBottom align='center'>
                                 Get to know me!
                             </Typography>
-                            <Typography variant="body1" paragraph>
+                            <Typography variant="body1" paragraph >
                                 Tap on the buttons above to find out more about me and the reasons why you should hire me.
                             </Typography>
                         </CardContent>
                         <CardMedia
                             component="img"
-                            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+                            sx={{ width: 160, display: { xs: 'block', sm: 'block' } }}
                             image={LakeView}
                         />
                     </Card>
@@ -70,16 +70,16 @@ export default function Home() {
                 <Grid item xs={12} md={6}>
                     <Card sx={{ display: 'flex' }}>
                         <CardContent sx={{ flex: 1 }}>
-                            <Typography component="h2" variant="h5">
+                            <Typography component="h2" variant="h5" gutterBottom align='center'>
                                 And added bonus..
                             </Typography>
-                            <Typography variant="body1" paragraph>
+                            <Typography variant="body1" paragraph align='center'>
                                 You get to enjoy cute pictures of my dog!
                             </Typography>
                         </CardContent>
                         <CardMedia
                             component="img"
-                            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
+                            sx={{ width: 160, display: { xs: 'block', sm: 'block' } }}
                             image={Schoolpic}
                         />
                     </Card>

@@ -19,8 +19,11 @@ export default function Personal() {
 
     return (
         <Grid container spacing={5} sx={{ mt: 3 }}>
-            <Grid item xs={6} md={4}>
+            <Grid item xs={12} md={4}>
                 <Paper elevation={1} sx={{ p: 2, marginBottom: 2 }}>
+                    <Typography variant='h6' gutterBottom>
+                        Contact me
+                    </Typography>
                     <Typography>{data.name}</Typography>
                     <Typography>{data.email}</Typography>
                     <Link href={data.linkedin}>LinkedIn</Link> <br />
@@ -35,23 +38,39 @@ export default function Personal() {
                     About me
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                    I am a new talent in developing looking for the next adventure in Fullstack Development.
-                    I have wide knowlegde in different business fields which is an advantage when
-                    developing programs to different types of customers.
-                </Typography>
+                    I'm a new talent in developing looking for the next adventure in Fullstack Development. I have a wide experience in different fields
+                    and I find it to be great base for developing software for different types of customers and understanding what they need.
+                </Typography><br />
                 <Typography variant='h6' gutterBottom>
                     My Specialities
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                    I love to solve problems, improve myself and the ways I work. I always think of the big picture, even though I love to focus on the smallest details.
-                    I'm very analytical and pedantic. Learning new things and becoming a professional in my own field is something I strive for.
+                    I love to solve problems and improve myself and the ways I work. I always think of the big picture, even though I love to focus on the smallest details.
+                    I'm very analytical and pedantic.
                 </Typography>
                 <Typography variant='body1' gutterBottom>
-                    In my studies I mastered the basics of Full Stack Developing. My favorite things are SQL, C# and Asp.Net Core.
-                    I also enjoy using React and Node.js. I am a beginner in Azure, AWS and Python, but fortunately I'm exceptionally fast learner.
+                    I'm great at explaining technical things understandably to end users and communicating with stakeholders. I'm an exceptionally fast learner and
+                    becoming professional in my own field is one of the things I strive for.
+                </Typography><br />
+                <Typography variant='h6' gutterBottom>
+                    Feedback from managers and collegues
                 </Typography>
+                <Typography variant='body1' gutterBottom>
+                    The qualities my managers and collegues appriciate about me are reliability, efficiecy, calm and clear way of explaining things and being approachable.
+                </Typography>
+                <Typography variant='body1' gutterBottom>
+                    I make sure to do the things assigned to me on time and as efficiently as possible. I do things carefully and according to the standards.
+                </Typography>
+                <Typography variant='body1' gutterBottom>
+                    As a team leader trainee my team appriciated that I was available and understanding.
+                    I made sure that I had time for them and did my best at solving problems with the ways of working.
+                </Typography><br />
                 <Typography variant='h6' gutterBottom>
                     Hobbies
+                </Typography>
+                <Typography variant='body1' gutterBottom>
+                    In my freetime I try to do things that don't involve sitting at the computer. I love to go hiking with my dog, playing the cello,
+                    doing puzzles and playing boardgames. I also like to do DIY projects like small facelifts at the house or renovate furniture.
                 </Typography>
             </Grid>
         </Grid>
