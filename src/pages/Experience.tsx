@@ -14,7 +14,7 @@ export default function Experience() {
     }, [])
    
     async function getExperience() {
-        const response = await fetch("https://cv-mi5k.onrender.com/work_experience")
+        const response = await fetch("api/work_experience")
         const experience = await response.json()
         setData(experience)
     }

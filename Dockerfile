@@ -1,15 +1,8 @@
-FROM node:18-alpine
-
+FROM node:16-alpine as build-stage
 WORKDIR /app
-
-COPY package.json .
-
-RUN npm install
-
+COPY package.json ./
+RUN npm install 
 COPY . .
-
 RUN npm run build
-
-EXPOSE 8080
-
-CMD [ "npm", "run", "preview" ]
+EXPOSE 3000
+CMD ["pm2-runtime", "start", "ecosystem.config.js"]
