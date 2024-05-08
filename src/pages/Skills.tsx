@@ -21,19 +21,19 @@ export default function Skills() {
     }, [])
 
     async function getSkills() {
-        const response = await fetch("https://cv-mi5k.onrender.com/skills")
+        const response = await fetch("https://cv-latest.onrender.com/skills")
         const skills = await response.json()
         setSkills(skills)
     }
 
     async function getSoftSkills() {
-        const response = await fetch("https://cv-mi5k.onrender.com/soft_skills")
+        const response = await fetch("https://cv-latest.onrender.com/soft_skills")
         const skills = await response.json()
         setSoft(skills)
     }
 
     async function getLanguages() {
-        const response = await fetch("https://cv-mi5k.onrender.com/languages")
+        const response = await fetch("https://cv-latest.onrender.com/languages")
         const languages = await response.json()
         setLanguages(languages)
     }

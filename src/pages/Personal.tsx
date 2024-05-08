@@ -13,7 +13,7 @@ export default function Personal() {
     }, [])
 
     async function getPersonalInfo() {
-        const response = await fetch("https://cv-mi5k.onrender.com/personal_info")
+        const response = await fetch("https://cv-latest.onrender.com/personal_info")
         const info = await response.json()
         setData(info)
     }
