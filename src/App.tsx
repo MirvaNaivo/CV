@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 /* Local Components */
-import Home from './pages/Home'
-import Personal from './pages/Personal'
-import Experience from './pages/Experience'
-import Education from './pages/Education'
-import Skills from './pages/Skills'
+import Home from './pages/Home.tsx'
+import Personal from './pages/Personal.tsx'
+import Experience from './pages/Experience.tsx'
+import Education from './pages/Education.tsx'
+import Skills from './pages/Skills.tsx'
 import './App.css'
 
 /* Mui */

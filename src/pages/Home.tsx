@@ -1,3 +1,5 @@
+import React from 'react'
+
 import Header from '../images/Header.jpg'
 import Schoolpic from '../images/Schoolpic.jpg'
 import LakeView from '../images/Kaitajärvi.jpg'

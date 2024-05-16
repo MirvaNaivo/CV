@@ -1,12 +1,10 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
 import bodyParser from 'body-parser';
 import fs from 'fs-extra';
 import path from 'path';
-import cors from 'cors';
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
 
 const DB_FILE = path.join(__dirname, 'db.json')
 
@@ -15,7 +13,7 @@ async function loadData() {
     return data
 }
 
-app.get('/api/education', async (req, res) => {
+app.get('/api/education', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.education)
@@ -24,7 +22,7 @@ app.get('/api/education', async (req, res) => {
     }
 })
 
-app.get('/api/work_experience', async (req, res) => {
+app.get('/api/work_experience', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.work_experience)
@@ -33,7 +31,7 @@ app.get('/api/work_experience', async (req, res) => {
     }
 })
 
-app.get('/api/skills', async (req, res) => {
+app.get('/api/skills', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.skills)
@@ -42,7 +40,7 @@ app.get('/api/skills', async (req, res) => {
     }
 })
 
-app.get('/api/soft_skills', async (req, res) => {
+app.get('/api/soft_skills', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.soft_skills)
@@ -51,7 +49,7 @@ app.get('/api/soft_skills', async (req, res) => {
     }
 })
 
-app.get('/api/languages', async (req, res) => {
+app.get('/api/languages', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.languages)
@@ -60,7 +58,7 @@ app.get('/api/languages', async (req, res) => {
     }
 })
 
-app.get('/api/personal_info', async (req, res) => {
+app.get('/api/personal_info', async (_req: Request, res: Response) => {
     try {
         const data = await loadData()
         res.send(data.personal_info)
